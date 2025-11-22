@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Capabilities from './components/Capabilities';
 import Impact from './components/Impact';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import { ThemeProvider } from './context/ThemeContext';
 
@@ -19,14 +20,18 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="bg-gray-50 dark:bg-[#0a0e27] text-gray-900 dark:text-white overflow-x-hidden transition-colors duration-300">
+      <div className="bg-gray-50 dark:bg-[#0a0e27] text-gray-900 dark:text-white overflow-x-hidden transition-colors duration-300 min-h-screen flex flex-col">
+        <div className="bg-noise"></div>
         <Navigation scrollY={scrollY} />
-        <Hero />
-        <Journey />
-        <Projects />
-        <Capabilities />
-        <Impact />
-        <Contact />
+        <main className="flex-grow">
+          <Hero />
+          <Journey />
+          <Projects />
+          <Capabilities />
+          <Impact />
+          <Contact />
+        </main>
+        <Footer />
       </div>
     </ThemeProvider>
   );
