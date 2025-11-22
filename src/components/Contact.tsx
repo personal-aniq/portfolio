@@ -79,13 +79,13 @@ export default function Contact() {
         </form>
 
         <div className="mt-16 flex justify-center gap-8">
-          <a href="#" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white transition-colors">
+          <a href="https://github.com/aniqurahman" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white transition-colors">
             <Github size={24} />
           </a>
-          <a href="#" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white transition-colors">
+          <a href="https://linkedin.com/in/aniqurrahman" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="#" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white transition-colors">
+          <a href="mailto:aniqurrahman@outlook.com" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white transition-colors">
             <Mail size={24} />
           </a>
         </div>
