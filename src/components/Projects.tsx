@@ -97,8 +97,8 @@ export default function Projects() {
               key={index}
               onClick={() => setSelectedProject(index)}
               className={`p-6 rounded-xl text-left transition-all duration-300 ${selectedProject === index
-                  ? 'bg-blue-500/10 dark:bg-blue-500/20 border-2 border-blue-500'
-                  : 'bg-white dark:bg-white/5 border-2 border-gray-200 dark:border-white/10 hover:border-blue-300 dark:hover:border-white/20 shadow-sm dark:shadow-none'
+                ? 'bg-blue-500/10 dark:bg-blue-500/20 border-2 border-blue-500'
+                : 'bg-white dark:bg-white/5 border-2 border-gray-200 dark:border-white/10 hover:border-blue-300 dark:hover:border-white/20 shadow-sm dark:shadow-none'
                 }`}
             >
               <div className={`text-sm text-gray-500 dark:text-gray-400 mb-2`}>{proj.category}</div>
@@ -108,7 +108,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="bg-white dark:bg-gradient-to-br dark:from-white/5 dark:to-white/0 rounded-3xl p-8 md:p-12 border border-gray-200 dark:border-white/10 shadow-xl dark:shadow-none">
+        <div className="bg-white dark:bg-white/5 rounded-3xl p-8 md:p-12 border border-gray-200 dark:border-white/10 shadow-xl dark:shadow-none">
           <div className="flex items-start gap-6 mb-8">
             <div className={`p-6 rounded-2xl bg-gradient-to-br ${project.gradient} text-white`}>
               <Icon size={32} />
